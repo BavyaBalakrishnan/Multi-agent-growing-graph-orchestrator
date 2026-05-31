@@ -498,6 +498,7 @@ The parallel layer's wall-clock equals the slowest branch, not the sum.
 **Query:** Plan a 3-day vacation to Japan with structured JSON output and field constraints.
 
 ### Run 1 — Critic PASS (session `s8-2175f6c8`)
+```
 bavyabalakrishnan@IB-C3Y0T4HTM7 code % cd "/Users/bavyabalakrishnan/EAG V3/APP8/S8SharedCode/code" && uv run python flow.py "Plan a 3-day vacation to Japan with a daily budget under 10000 JPY. Output as JSON with fields: city, country, num_days, budget_per_day, currency, activities (list of 3 activities). The exact expected values must be: country=\"Japan\", num_days=\"3\", currency=\"JPY\". The budget_per_day must be a number less than 10000. The activities list must have exactly 3 items."
 
 ══════════════════════════════════════════════════════════════════════════════
